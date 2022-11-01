@@ -10,15 +10,17 @@
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'"
   },
   "dependencies": {
-    "@nextui-org/react": "^1.0.0-beta.10",
+    "@nextui-org/react": "1.0.0-beta.10",
     "@react-stately/collections": "^3.4.4",
     "@react-stately/menu": "^3.4.2",
+    "color": "^4.2.3",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.0.0",
+    "@types/color": "^3.0.3",
     "@types/node": "18.11.7",
     "@types/react": "18.0.24",
     "@typescript-eslint/eslint-plugin": "latest",

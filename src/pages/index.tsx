@@ -6,20 +6,22 @@ export default function Home() {
   return (
     <Container
       css={{
+        marginLeft: 0,
         justifyContent: 'center',
         alignContent: 'center',
-        width: '100vw',
-        height: '100vh'
+        bg: 'orange',
       }}
     >
       <Image
-        src={'/underConstruction.png'}
+        src={'/logo.png'}
         alt={''}
-        fill
+        width={400}
+        height={400}
         style={{
-          objectFit: 'contain'
+          objectFit: 'contain',
+          borderRadius: 200,
         }}
       />
-    </Container>
+    </Container >
   )
 }
