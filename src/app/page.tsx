@@ -1,3 +1,6 @@
+'use client'
+
+import { useEffect } from 'react'
 import clsx from 'clsx'
 import Image from 'next/image'
 import { Menu } from './components/Menu/Menu'
@@ -6,6 +9,18 @@ import { styles } from './styles'
 
 
 export default function Home() {
+  useEffect(() => {
+    const hash = window.location.hash
+    if (hash) {
+      const id = hash.substring(1)
+      setTimeout(() => {
+        const element = document.getElementById(id)
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }, 100)
+    }
+  }, [])
 
   return (
     <main className={styles.main}>
